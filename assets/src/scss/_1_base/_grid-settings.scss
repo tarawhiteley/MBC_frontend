@@ -6,16 +6,16 @@
   display: grid;
   grid-gap: 40px;
   grid-template-columns: 1fr;
-  /* grid-template-rows: auto 1fr auto; */
   grid-template-areas:
     "nav nav"
     "header header"
     "main aside"
     "footer footer";
   height: 100vh;
+}
 
-aside {
-  grid-area: aside;
+nav {
+  grid-area: nav;
 }
 
 header {
@@ -24,6 +24,10 @@ header {
 
 main {
   grid-area: main;
+}
+
+aside {
+  grid-area: aside;
 }
 
 footer {

@@ -1,1 +1,43 @@
 /* ASIDE Layout */
+
+aside {
+  width: auto;
+  margin-right: 30px;
+  border: 2px solid $color-dark-blue;
+
+  #form_title {
+        background-color: $color-gray;
+        width: auto;
+        padding: 30px;
+        margin-top: 0;
+        border-bottom: 2px solid $color-dark-blue;
+  }
+
+  h2 {
+    font-family: $merriweather;
+    font-size: 1.4em;
+    color: $color-dark-blue;
+    padding-left: 30px;
+  }
+
+  fieldset {
+    width: 40%;
+    padding: 30px;
+    margin: 30px;
+  }
+
+  label {
+    display: block;
+  }
+
+  input[type="text"], textarea {
+    border: 1px solid $color-light-blue;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  #submit {
+    padding: 8px;
+    margin: 30px;
+  }
+}

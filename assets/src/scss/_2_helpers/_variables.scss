@@ -27,10 +27,10 @@ $opensans: "Open Sans";
 $merriweather: "Merriweather";
 
 @mixin opensans() {
-  font-family: $opensans;
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
 }
 
 @mixin merriweather() {
-  font-family: "Merriweather";
+  font-family: 'Merriweather', serif;
 }

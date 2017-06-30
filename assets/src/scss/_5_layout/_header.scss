@@ -2,29 +2,49 @@
     #NAV
 \*------------------------------------*/
 
-nav {
+.nav {
 	width: 100%;
+	height: auto;
+	background: white;
+	padding: 10px 0;
+	margin: auto;
+	position: fixed;
+	top: 0px;
+	z-index: map-get($zindex, header);
+
 
 	ul {
+		width: 100%;
+		height: auto;
 		@include no-margin-padding;
 		@include no-bullets;
 
 		li {
 			display: inline;
+			width: 100%;
+			padding: 0 20px;
+			vertical-align: middle;
+
+			img {
+				width: 25%;
+			}
 
 			a {
-				a {
-			    color: $color-dark-blue;
+		    color: $color-dark-blue;
+				font-size: 1.4em;
+				text-decoration: none;
 
 			    &:hover {
-			      color: $color-gray;
+			      color: $color-light-blue;
+						opacity: 0.9;
 			    }
-			  }
-				svg {
-			    fill: currentColor;
-			    height: 10em;
-					display: inline-block;
-			  }
+
+					svg {
+				    fill: currentColor;
+				    height: 5.4em;
+						display: inline;
+						padding: 0;
+			  	}
 			}
 		}
 	}
