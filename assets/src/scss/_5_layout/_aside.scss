@@ -2,7 +2,7 @@
 
 aside {
   width: auto;
-  margin: 80px 30px 0 0;
+  margin: 10px 30px 0 0;
   border: 2px solid $color-dark-blue;
 
   #form_title {
@@ -11,6 +11,18 @@ aside {
         padding: 20px;
         margin-top: 0;
         border-bottom: 2px solid $color-dark-blue;
+        animation: color 3s ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+  }
+
+  @keyframes color {
+    0% {
+      background-color: $color-light-blue;
+    }
+    100% {
+      background-color: $color-dark-blue;
+    }
   }
 
   h2 {
@@ -38,6 +50,6 @@ aside {
 
   #submit {
     padding: 8px;
-    margin: 10px;
+    margin: 10px 0 10px 30px;
   }
 }

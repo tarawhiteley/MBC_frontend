@@ -9,9 +9,15 @@
 	padding: 10px 0;
 	margin: auto;
 	position: fixed;
-	top: 0px;
+	top: 0;
 	z-index: map-get($zindex, header);
-	text-align: justify;
+	text-align: center;
+
+	img {
+		width: 25%;
+		margin: 0 30px;
+		vertical-align: -150%;
+	}
 
 	ul {
 		width: 100%;
@@ -19,22 +25,17 @@
 		@include no-margin-padding;
 		@include no-bullets;
 
+
 		li {
 			display: inline;
 			width: 100%;
 			padding: 0 20px;
 
 
-			img {
-				width: 25%;
-				margin: 0 40px;
-			}
-
 			a {
 		    color: $color-dark-blue;
 				font-size: 1.4em;
 				text-decoration: none;
-				vertical-align: 96%;
 
 			    &:hover {
 			      color: $color-light-blue;
