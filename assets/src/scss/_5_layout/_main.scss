@@ -1,6 +1,6 @@
 main {
-  width: 50%;
-  margin: 30px;
+  width: 100%;
+  margin: 0 30px;
 
   h1, h2, form h2 {
     font-family: $merriweather;
@@ -13,4 +13,71 @@ main {
   h2 {
     font-size: 1.8em;
   }
+
+  p {
+    font-family: $opensans;
+    font-size: 1.2em;
+  }
 }
+
+.service--inline {
+  width: 100%;
+  display: flex;
+
+  .block {
+    width: calc(100% / 5);
+  }
+
+  a {
+    color: $color-dark-blue;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-light-blue;
+      opacity: .9;
+    }
+
+    svg {
+      fill: currentColor;
+      height: 50px;
+      width: 50px;
+    }
+
+    p {
+      display: block;
+      font-size: 1.2em;
+      width: 100px;
+    }
+  }
+}
+
+/*
+.service {
+display: grid;
+grid-gap: 10px;
+grid-template-columns: 1fr;
+grid-template-areas:
+  "service1 service2 service3"
+  "service4 service5 service6";
+height: 100vh;
+}
+
+#service1 {
+  grid-area: service1;
+}
+#service2 {
+  grid-area: service2;
+}
+#service3 {
+  grid-area: service3;
+}
+#service4 {
+  grid-area: service4;
+}
+#service5 {
+  grid-area: service5;
+}
+#service6 {
+  grid-area: service6;
+}
+*/
