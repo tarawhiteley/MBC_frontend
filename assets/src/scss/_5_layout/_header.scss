@@ -11,6 +11,7 @@
 	position: fixed;
 	top: 0px;
 	z-index: map-get($zindex, header);
+	text-align: justify;
 
 	ul {
 		width: 100%;
@@ -26,6 +27,7 @@
 
 			img {
 				width: 25%;
+				margin: 0 40px;
 			}
 
 			a {
@@ -39,12 +41,10 @@
 						opacity: 0.9;
 			    }
 
-				/*	svg {
+				svg {
 				    fill: currentColor;
-				    height: 5.4em;
-						display: inline;
 						padding: 0;
-			  	}*/
+			  	}
 			}
 		}
 	}
