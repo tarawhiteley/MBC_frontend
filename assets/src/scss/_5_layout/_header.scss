@@ -14,9 +14,34 @@
 	text-align: center;
 
 	img {
-		width: 25%;
-		margin: 0 30px;
+		width: 50%;
+		margin: 0 10px;
 		vertical-align: -150%;
+	}
+
+	@media (min-width: 700px){
+		img {
+			width: 40%;
+		}
+	}
+
+	@media (min-width: 800px){
+		img {
+			width: 35%;
+		}
+	}
+
+	@media (min-width: 900px){
+		img {
+			width: 30%;
+			margin: 0 20px;
+		}
+	}
+
+	@media (min-width: 1060px){
+		img {
+			width: 25%;
+		}
 	}
 
 	ul {
