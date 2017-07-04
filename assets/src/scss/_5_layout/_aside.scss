@@ -1,10 +1,44 @@
 /* ASIDE Layout */
+
 aside {
+
   .form {
-    width: auto;
+    width: 70%;
     height: auto;
-    margin: 10px 30px 0 0;
+    margin: 40px 30px 0 0;
     border: 2px solid $color-dark-blue;
+    margin: auto;
+  }
+
+  @media (min-width: 700px) {
+    .form {
+      width: 65%;
+      margin-top: 10px;
+    }
+  }
+
+  @media (min-width: 800px) {
+    .form {
+      width: 60%;
+    }
+  }
+
+  @media (min-width: 850px) {
+    .form {
+      width: 55%;
+    }
+  }
+
+  @media (min-width: 950px) {
+    .form {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: 1060px) {
+    .form {
+      width: auto;
+    }
   }
 
   legend {

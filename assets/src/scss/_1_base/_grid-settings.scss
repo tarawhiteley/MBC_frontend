@@ -2,34 +2,38 @@
     #GRID-SETTINGS
 \*------------------------------------*/
 
-.page {
-  display: grid;
-  grid-gap: 40px;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "nav nav"
-    "header header"
-    "main aside"
-    "footer footer";
-  height: 100vh;
-}
+@media (min-width: 1060px) {
 
-nav {
-  grid-area: nav;
-}
+  .page {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "nav nav"
+      "header header"
+      "main aside"
+      "footer footer";
+    height: 100vh;
+  }
 
-header {
-  grid-area: header;
-}
+  nav {
+    grid-area: nav;
+  }
 
-main {
-  grid-area: main;
-}
+  header {
+    grid-area: header;
+  }
 
-aside {
-  grid-area: aside;
-}
+  main {
+    grid-area: main;
+  }
 
-footer {
-  grid-area: footer;
+  aside {
+    grid-area: aside;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+
 }
