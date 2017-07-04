@@ -8,22 +8,28 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://i.icomoon.io/public/temp/3e6d362a29/UntitledProject/style-svg.css">
     <script defer src="https://i.icomoon.io/public/temp/3e6d362a29/UntitledProject/svgxuse.js"></script>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-
   </head>
   <body>
     <div class="page">
-      <nav class="nav">
 
+      <nav class="nav">
+      <!-- Logo -->
+      <a href="index.html"><img src="img/mbcfullcolorhoriz.svg" width="200" alt="logo" title="Midwest Business Consulting"></a>
+
+        <button id="hamb">
+          <div id="rect1" class="showRect"></div>
+          <div id="rect2" class="showRect"></div>
+          <div id="rect3" class="showRect"></div>
+        </button>
+        <div id="slideDown" class="hidden">
         <!-- Navigation -->
-          <ul>
-            <li><!-- Logo -->
-            <a href="index.html"><img src="http://tarawhiteley.com/mbc_horiz.svg" width="200" alt="logo" title="Midwest Business Consulting"></a></li>
+          <ul class="pages">
             <li><a href="about.html">About</a></li>
     				<li><a href="services.html">Services</a></li>
     				<li><a href="contact.html">Contact</a></li>
     				<li><a href="knowledge.html">Knowledge Base</a></li>
+          </ul>
+          <ul class="social">
             <!-- Social Media -->
             <!-- Facebook -->
             <li><a href="https://www.facebook.com/mbconsultingco/">
@@ -60,6 +66,7 @@
               </svg>
             </a></li>
           </ul>
+        </div>
       </nav>
 
       <header>
@@ -178,7 +185,7 @@
             </div>
             <div id="collapseFour" class="panel-collapse collapse">
               <div class="panel-body">
-                The MBC Team has vast experience planning, mobilizing, and managing a wide range of mission-critical Operation and Maintenance (O&M) divisions, optimizing existing maintenance and facilities management operations, mobilizing Computerized Maintenance Management Systems (CMMS), and developing and deploying effective operating plans. The benefits of an optimized maintenance operation are myriad and include reduced operating costs and downtimes, optimized preventive maintenance schedules and inventories, efficient storage and retrieval of information to support management decisions and effective insulation from costly litigation.
+                The MBC Team has vast experience planning, mobilizing, and managing a wide range of mission-critical Operation and Maintenance divisions, optimizing existing maintenance and facilities management operations, mobilizing Computerized Maintenance Management Systems (CMMS), and developing and deploying effective operating plans. The benefits of an optimized maintenance operation are myriad and include reduced operating costs and downtimes, optimized preventive maintenance schedules and inventories, efficient storage and retrieval of information to support management decisions and effective insulation from costly litigation.
               </div>
             </div>
           </div>
@@ -228,5 +235,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
+  <script src="assets/src/js/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
