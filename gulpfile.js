@@ -110,8 +110,8 @@ gulp.task('clean', function() {
 gulp.task('serve', ['styles'], function() {
     browserSync.init({
 		open: 'external',
-		host: 'mbc.dev:8888',
-    proxy: 'mbc.dev:8888',
+		host: 'mbc.dev',
+    proxy: 'mbc.dev',
 		ghostMode: {
 			clicks: true,
 			forms: true,
