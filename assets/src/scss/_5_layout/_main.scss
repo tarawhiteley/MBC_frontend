@@ -1,6 +1,6 @@
 main {
   width: auto;
-  margin: 0 30px 0 30px;
+  margin: 0 30px 40px 30px;
 
   h1, h2, form h2 {
     font-family: $merriweather;
@@ -15,10 +15,18 @@ main {
     font-size: 1.8em;
   }
 
-  p, h4 {
+  p {
+        font-size: 1.2em;
+  }
+
+  p, h4, a {
     font-family: $opensans;
     color: $color-dark-blue;
-    font-size: 1.2em;
+  }
+
+  a:hover, a:visited {
+    color: $color-light-blue;
+    opacity: 0.9;
   }
 }
 
@@ -62,18 +70,22 @@ main {
 }
 
 /* accordian drop down */
+
 .containeraccordion {
   width: auto;
 }
+
 
 .panel-heading .accordion-toggle:after {
     /* symbol for "opening" panels */
     font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
     content: "\e114";    /* adjust as needed, taken from bootstrap.css */
     float: right;        /* adjust as needed */
-    color: $color-gray;         /* adjust as needed */
+    color: grey;         /* adjust as needed */
+
 }
 .panel-heading .accordion-toggle.collapsed:after {
     /* symbol for "collapsed" panels */
     content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+
 }

@@ -10,38 +10,6 @@ aside {
     margin: auto;
   }
 
-  @media (min-width: 700px) {
-    .form {
-      width: 65%;
-      margin-top: 10px;
-      margin-right: 30px;
-    }
-  }
-
-  @media (min-width: 800px) {
-    .form {
-      width: 60%;
-    }
-  }
-
-  @media (min-width: 850px) {
-    .form {
-      width: 55%;
-    }
-  }
-
-  @media (min-width: 950px) {
-    .form {
-      width: 50%;
-    }
-  }
-
-  @media (min-width: 1060px) {
-    .form {
-      width: auto;
-    }
-  }
-
   legend {
     border: none !important;
     width: auto;
@@ -98,5 +66,60 @@ aside {
     #submit {
       padding: 8px;
       margin: 10px 0 20px 30px;
+      background-color: $color-dark-blue;
+      color: $color-white;
+      border: 1px solid $color-dark-blue;
     }
+
+    #submit:hover {
+      background-color: $color-light-blue;
+    }
+
+    @media (min-width: 320px) {
+      fieldset, input[type="text"], textarea {
+        width: 70%;
+        margin: 10px auto;
+      }
+    }
+
+    @media (min-width: 600px) {
+      fieldset, input[type="text"], textarea {
+        width: 70%;
+        margin: 10px auto;
+      }
+    }
+
+    @media (min-width: 700px) {
+      .form {
+        width: 80%;
+        margin-top: 10px auto;      }
+
+      fieldset {
+        width: 80%;
+      }
+    }
+
+    @media (min-width: 800px) {
+      .form {
+        width: 70%;
+      }
+    }
+
+    @media (min-width: 850px) {
+      .form {
+        width: 60%;
+      }
+    }
+
+/* aside grid settings in effect */
+    @media (min-width: 1060px) {
+      .form {
+        width: auto;
+        margin-right: 30px;
+      }
+      fieldset {
+        width: 80%
+      }
+    }
+
   }

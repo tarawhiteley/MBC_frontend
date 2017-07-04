@@ -84,6 +84,8 @@
 
 /*HAMBURGER MENU */
 @media (max-width: 700px) {
+
+
 	#hamb {
 	  position: relative;
 		float: right;
@@ -161,7 +163,7 @@
 	          transition: all 0.5s ease-out;
 	}
 
-	.hidden
+	.navhidden
 	{
 	  /*THIS IS WHAT CHANGES TO HIDE YOUR MENU. THIS NEEDS TO BE '0'*/
 	  max-height: 0px;

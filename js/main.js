@@ -16,7 +16,7 @@ var bottomRectX= "bottomRectX";
 
 $("#"+hamburger).click(function(event) //CHECK IF YOUR BUTTON IS PRESSED
 {
-  if($("#"+slideNavName).attr('class')=="hidden") //CHECKS TO SEE IF YOUR MENU IS CURRENTLY CLOSED
+  if($("#"+slideNavName).attr('class')=="navhidden") //CHECKS TO SEE IF YOUR MENU IS CURRENTLY CLOSED
   {
     //CHANGE ICON TO AN 'X'
     $("#"+rectangleName+"1").toggleClass(showRect+" "+topRectX);
@@ -24,7 +24,7 @@ $("#"+hamburger).click(function(event) //CHECK IF YOUR BUTTON IS PRESSED
     $("#"+rectangleName+"3").toggleClass(showRect+" "+bottomRectX);
 
     //REVEAL YOUR NAVIGATION
-    $("#"+slideNavName).toggleClass('hidden revealed');
+    $("#"+slideNavName).toggleClass('navhidden revealed');
   }
 
   else if($("#"+slideNavName).attr('class')=="revealed") //CHECKS TO SEE IF YOUR MENU IS CURRENTLY OPEN
@@ -35,7 +35,7 @@ $("#"+hamburger).click(function(event) //CHECK IF YOUR BUTTON IS PRESSED
     $("#"+rectangleName+"3").toggleClass(showRect+" "+bottomRectX);
 
     //HIDE YOUR NAVIGATION
-    $("#"+slideNavName).toggleClass('revealed hidden');
+    $("#"+slideNavName).toggleClass('revealed navhidden');
   }
 });
 
@@ -53,7 +53,7 @@ $(window).scroll(function(event) //AUTOMATICALLY HIDES THE NAV WHEN SCROLLING ST
     $("#"+rectangleName+"3").toggleClass(showRect+" "+bottomRectX);
 
     //HIDE YOUR NAVIGATION
-    $("#"+slideNavName).toggleClass('revealed hidden');
+    $("#"+slideNavName).toggleClass('revealed navhidden');
   }
 });
 
