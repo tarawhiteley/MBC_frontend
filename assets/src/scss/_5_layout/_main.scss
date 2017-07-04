@@ -22,41 +22,44 @@ main {
   }
 }
 
-
+/* responsive - hide services icon until 700px */
 .service--inline {
-  display: flex;
-  width: auto;
-  text-align: center;
-  margin-top: 50px;
-
-  .block {
-    width: calc(100% / 5);
-  }
-
-  a {
-    color: $color-dark-blue;
-    text-decoration: none;
-
-      &:hover {
-        color: $color-light-blue;
-        opacity: .9;
-      }
-    }
-
-    svg {
-      fill: currentColor;
-      height: 50px;
-      width: 50px;
-    }
-
-    p {
-      display: block;
-      padding: 20px 0 50px 0;
-    }
-
-
+  display: none;
 }
 
+@media (min-width: 700px) {
+  .service--inline {
+    display: flex;
+    width: auto;
+    text-align: center;
+    margin-top: 50px;
+
+    .block {
+      width: calc(100% / 5);
+    }
+
+    a {
+      color: $color-dark-blue;
+      text-decoration: none;
+
+        &:hover {
+          color: $color-light-blue;
+          opacity: .9;
+        }
+      }
+
+      svg {
+        fill: currentColor;
+        height: 50px;
+        width: 50px;
+      }
+
+      p {
+        display: block;
+        padding: 20px 0 50px 0;
+      }
+  }
+}
 
 /* accordian drop down */
 .containeraccordion {
