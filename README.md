@@ -16,13 +16,4 @@ You'll need the following installed on your computer:
 
 ---
 
-# Help! I'm a newbie!
-
-## Installing node
-
-## Installing bower
-
-## Installing gulp
-
-## Installing yarn
-# MBC_frontend
+# This site also uses Bootstrap and JQuery which are built into the project. 
