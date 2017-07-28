@@ -1,6 +1,6 @@
 main {
   width: auto;
-  margin: 0 30px 40px 30px;
+  margin: 0 30px 45px 60px;
 
   h1, h2, form h2 {
     font-family: $merriweather;
@@ -9,14 +9,19 @@ main {
 
   h1 {
     font-size: 2.4em;
+    margin: 0;
   }
 
   h2 {
     font-size: 1.8em;
+    padding: 40px 0 10px 5px;
+    clear: both;
   }
 
   p {
-        font-size: 1.2em;
+    font-size: 1.2em;
+    margin: 0 auto;
+    padding: 0 0 5px 5px;
   }
 
   p, h4, a {
@@ -88,4 +93,44 @@ main {
     /* symbol for "collapsed" panels */
     content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 
+}
+
+/* contact page */
+.floatleft {
+  float: left;
+}
+
+.floatright {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.contactus {
+  width: 62%;
+}
+
+.emailicon {
+  width: 160px;
+}
+
+.contactgroup {
+  width: 80%;
+}
+
+.contactus, .contactgroup {
+  margin: 246px 30px 45px 60px;
+}
+
+/* about */
+
+
+.headshot {
+  width: 20%;
+}
+
+.aboutbody {
+  width: 75%;
 }
